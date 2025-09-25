@@ -1,10 +1,11 @@
-Overview:
+
 This project uses Natural Language Processing (NLP) to analyze the emotional
 mood of song lyrics. By using text preprocessing, a fine-tuned DistilRoBERTa
 emotion classifier, and data visualization, the system transforms some lyrics
 into structured emotional ideas.
 
-Key Features:
+Final product is the intellectual property of Stanford NLP Group.
+
 1. Preprocessing
    - Converts lyrics to lowercase
    - Removes punctuation
@@ -32,7 +33,3 @@ Key Features:
        * Shows full emotional moods and ideas of each song
        * One chart saved per track with all mood intensities plotted
 
-Outputs Produced:
-- song_lyrics_mood_analysis.csv → dataset with mood analysis
-- mood_distribution.png → overall distribution of moods across multiple processed songs
-- mood_charts/ → directory containing radar charts, one per song
