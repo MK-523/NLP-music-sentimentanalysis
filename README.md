@@ -6,19 +6,19 @@ into structured emotional ideas.
 
 Final product is the intellectual property of Stanford NLP Group.
 
-1. Preprocessing
+Preprocessing
    - Converts lyrics to lowercase
    - Removes punctuation
    - Removes whitespace
  
 
-2. NLP Classification
+NLP Classification
    - Uses Hugging Face DistilRoBERTa model trained for multi-emotion detection
    - Generates probability scores for emotions such as joy, sadness, anger, love, fear
    - Applies a threshold (default ≥ 0.25) to capture many dominant moods, if necessary
    - Falls back to single highest-scoring mood if no score crosses threshold
 
-3. Batch Processing
+Batch Processing
    - Reads input from CSV file (song_lyrics.csv) with title, artist, lyrics
    - Processes lyrics in batches to go quicker and be more efficient
    - Outputs results with two new columns:
@@ -26,7 +26,7 @@ Final product is the intellectual property of Stanford NLP Group.
        * mood_scores → dictionary of all emotion probabilities
    - Saves annotated dataset to song_lyrics_mood_analysis.csv
 
-4. Visualizations
+Visualizations
    - bar chart (mood_distribution.png)
        * Summarizes frequency of each dominant mood across the dataset
    - Per-song radar charts (mood_charts/*.png)
